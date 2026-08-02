@@ -1,0 +1,32 @@
+services:
+  client:
+    build: ./client
+    command: npm run dev -- --host 0.0.0.0
+    working_dir: /app
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+    ports:
+      - "5173:5173"
+  client-builder:
+    build: ./client
+    command: npm run build:watch
+    working_dir: /app
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+      - ./server/public:/app/dist
+  backend:
+    build: ./server
+    command: npm run dev
+    working_dir: /app
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./server/.env
+
+volumes:
+  frontend-build:
