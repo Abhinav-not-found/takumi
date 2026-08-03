@@ -1,5 +1,11 @@
+import Button from "@/shared/ui/components/button";
+
 const App = () => {
-	return <div className="bg-red-50">deployment testing</div>;
+	return (
+		<div>
+			<Button />
+		</div>
+	);
 };
 
 export default App;
