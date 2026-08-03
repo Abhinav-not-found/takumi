@@ -4,8 +4,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/server.ts",
-    "start": "node ./src/server.js"
+    "dev": "node init && tsx watch src/server.ts",
+    "start": "node init && node ./src/server.js"
   },
   "keywords": [],
   "author": "",
