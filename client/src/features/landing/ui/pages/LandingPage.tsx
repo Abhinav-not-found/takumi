@@ -1,10 +1,10 @@
-import Button from "@/shared/ui/components/button";
+import Button from "@/shared/ui/components/buttons/button";
 
 const LandingPage = () => {
 	return (
 		<div>
-			LandingPage
-			<Button />
+			{/* LandingPage
+			<Button /> */}
 		</div>
 	);
 };
