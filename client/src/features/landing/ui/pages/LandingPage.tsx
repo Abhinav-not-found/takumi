@@ -3,8 +3,8 @@ import Button from "@/shared/ui/components/button";
 const LandingPage = () => {
 	return (
 		<div>
-			LandingPage
-			<Button />
+			{/* LandingPage
+			<Button /> */}
 		</div>
 	);
 };
