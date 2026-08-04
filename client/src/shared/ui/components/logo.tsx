@@ -1,8 +1,10 @@
+import { Link } from "react-router";
+
 const Logo = () => {
 	return (
-		<p className="font-medium text-base tracking-tighter select-none cursor-pointer">
+		<Link to="/" className="font-medium text-base tracking-tighter select-none cursor-pointer px-1">
 			Takumi
-		</p>
+		</Link>
 	);
 };
 

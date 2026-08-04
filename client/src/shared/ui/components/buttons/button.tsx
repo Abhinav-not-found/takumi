@@ -4,9 +4,12 @@ import { twMerge } from "tailwind-merge";
 
 const variants = {
 	default: "bg-primary text-white",
+	ghost: "",
+	link: "underline underline-offset-2",
 };
 const sizes = {
 	default: "px-2.5 py-0.5",
+	icon:'p-1.5'
 };
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {

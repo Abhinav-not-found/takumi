@@ -30,11 +30,11 @@ const ModeToggle = () => {
 	};
 
 	return (
-		<button type="button" onClick={toggleTheme}>
+		<button type="button" onClick={toggleTheme} className="p-1.5 rounded-sm">
 			{isDark ? (
-				<SunIcon className="size-4" />
+				<SunIcon className="size-4.5 hover:text-yellow-400" />
 			) : (
-				<MoonIcon className="size-4" />
+				<MoonIcon className="size-4.5 hover:text-blue-600" />
 			)}
 		</button>
 	);
